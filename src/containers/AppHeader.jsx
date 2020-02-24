@@ -21,7 +21,7 @@ const AppHeader = props => {
             </Menu.ItemGroup>
             <Menu.Divider />
             <Menu.Item>
-                <div onClick={loginOut}> 
+                <div onClick={loginOut}>
                     <Icon type='logout' /> 退出登录
                 </div>
             </Menu.Item>
@@ -31,7 +31,7 @@ const AppHeader = props => {
         <Header className='header'>
             <div className='left'>
                 <Icon
-                    style={{ fontSize: '2rem' }}
+                    style={{ fontSize: '20px' }}
                     onClick={menuClick}
                     type={menuToggle ? 'menu-unfold' : 'menu-fold'}
                 />
@@ -39,11 +39,11 @@ const AppHeader = props => {
             <div className='right'>
                 <div className='mr15'>
                     <Badge dot={true} offset={[-2, 0]}>
-                        <Icon type='bell' style={{ fontSize: '2rem' }}/>
+                        <Icon type='bell' style={{ fontSize: '20px' }} />
                     </Badge>
                 </div>
                 <div>
-                    <Dropdown overlay={menu} overlayStyle={{ width: '20rem' }}>
+                    <Dropdown overlay={menu} overlayStyle={{ width: '200px' }}>
                         <div className='ant-dropdown-link'>
                             <Avatar icon='user' src={avatar} alt='avatar' style={{ cursor: 'pointer' }} />
                         </div>

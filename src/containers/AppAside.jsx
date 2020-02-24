@@ -10,7 +10,7 @@ const AppAside = props => {
     return (
         <Sider className='aside' collapsed={menuToggle}>
             <div className='logo'>
-                <Icon type='sketch' style={{ fontSize: '3.8rem', color: '#fff' }} />
+                <Icon type='sketch' style={{ fontSize: '38px', color: '#fff' }} />
             </div>
             <CustomMenu menu={menu}></CustomMenu>
         </Sider>
