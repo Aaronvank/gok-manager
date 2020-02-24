@@ -56,7 +56,7 @@ class Login extends Component {
 
     componentDidMount() {
         notification.open({
-            message: '欢迎使用项目管理平台',
+            message: '欢迎使用项目管理平台2222',
             duration: null,
             description: '账号：admin(管理员)和其他字段(游客)；密码：随意'
         })
