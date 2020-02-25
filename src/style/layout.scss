@@ -2,7 +2,7 @@
     font-size: 16px;
 
     @media screen and (max-width: 960px) {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .aside {
@@ -80,14 +80,34 @@
             font-weight: 400;
             color: rgba(110, 113, 117, 1);
         }
+
         .ant-menu-item:not(:last-child) {
             margin: 0;
         }
+
+        .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .anticon {
+            font-size: 23px;
+        }
+
+        .ant-menu-inline-collapsed > .ant-menu-item,
+        .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item,
+        .ant-menu-inline-collapsed
+            > .ant-menu-item-group
+            > .ant-menu-item-group-list
+            > .ant-menu-submenu
+            > .ant-menu-submenu-title,
+        .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+            display: flex;
+            justify-content: center;
+        }
+
         .ant-menu-inline {
             width: calc(100%);
             min-height: 64px;
         }
-
+        .ant-menu-inline-collapsed {
+            width: 100%;
+        }
         //ant-menu-item-selected
         //ant-menu-dark ant-menu-root ant-menu-inline
     }
@@ -97,7 +117,11 @@
         padding: 0 15px;
         display: flex;
         justify-content: space-between;
-
+        .center {
+            flex: 1;
+            margin-left: 30px;
+            margin-top: 16px;
+        }
         .right {
             display: flex;
             align-items: center;

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Menu, Dropdown, Icon, Layout, Avatar, Badge } from 'antd'
+import CustomBreadcrumb from '@/components/CustomBreadcrumb'
 
 const { Header } = Layout
 
@@ -35,6 +36,9 @@ const AppHeader = props => {
                     onClick={menuClick}
                     type={menuToggle ? 'menu-unfold' : 'menu-fold'}
                 />
+            </div>
+            <div className='center'>
+                <CustomBreadcrumb arr={['表单', '基础表单']}></CustomBreadcrumb>
             </div>
             <div className='right'>
                 <div className='mr15'>
