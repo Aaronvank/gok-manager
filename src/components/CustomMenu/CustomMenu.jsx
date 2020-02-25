@@ -6,7 +6,7 @@ import { Link, withRouter } from 'react-router-dom'
 class CustomMenu extends Component {
     state = {
         openKeys: [],
-        selectedKeys: [],
+        selectedKeys: []
     }
 
     // 处理 pathname
@@ -68,7 +68,7 @@ class CustomMenu extends Component {
         <Menu.Item key={key}>
             <Link to={key}>
                 {icon && <Icon type={icon} />}
-                <span>{title}</span>
+                <span className='spanFont'>{title}</span>
             </Link>
         </Menu.Item>
     )
@@ -81,7 +81,7 @@ class CustomMenu extends Component {
                 title={
                     <span>
                         {icon && <Icon type={icon} />}
-                        <span>{title}</span>
+                        <span className='spanFont'>{title}</span>
                     </span>
                 }>
                 {subs &&
@@ -97,7 +97,7 @@ class CustomMenu extends Component {
         return (
             <Menu
                 mode='inline'
-                theme='dark'
+                // theme='dark'
                 // openKeys={openKeys}
                 selectedKeys={selectedKeys}
                 onClick={({ key }) => this.setState({ selectedKeys: [key] })}
