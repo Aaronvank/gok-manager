@@ -11,8 +11,7 @@ const menu = [
         icon: 'folder',
         subs: [
             { title: '项目列表管理', key: '/projectManage/projectList', icon: '' },
-            { title: '项目人员管理', key: '/form/base-form', icon: '' },
-            { title: '项目任务管理', key: '/form/base-form', icon: '' }
+            { title: '项目人员管理', key: '/form/base-form', icon: '' }
         ]
     },
     {
@@ -23,13 +22,13 @@ const menu = [
     },
     {
         title: '报表中心',
-        key: '/index',
+        key: '/center',
         icon: 'bar-chart',
         subs: [{ title: '表格', key: '/index', icon: '' }]
     },
     {
         title: '系统管理',
-        key: '/index',
+        key: '/manage',
         icon: 'setting',
         subs: [{ title: '表格', key: '/show/table', icon: '' }]
     }
